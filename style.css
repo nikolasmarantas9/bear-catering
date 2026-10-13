@@ -1,0 +1,395 @@
+/* --- Google Fonts (Playfair Display & Inter) --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* --- Παλέτα Χρωμάτων εμπνευσμένη από το Λογότυπο --- */
+:root {
+    --bg-main: #121619;           /* Βαθύ σκοτεινό Steel-Black background */
+    --bg-card: #1b2126;           /* Σκούρο Slate Blue-Gray για κάρτες */
+    --bg-header: rgba(18, 22, 25, 0.95);
+    
+    --brand-blue: #4a7b96;        /* Το vintage Slate Blue του λογότυπου */
+    --brand-blue-hover: #5d93b3;
+    --brand-gold: #d2b074;        /* Το Vintage Sand/Gold του στάχυ & γραμμάτων */
+    --brand-gold-bright: #e2ca93; /* Φωτεινό χρυσαφί-άμμος */
+    --brand-red: #b84a39;         /* Rust Red πινελιά από το μαντήλι */
+    
+    --text-light: #f2eae1;        /* Cream / Off-White από το καπέλο του σεφ */
+    --text-muted: #a3b2bc;        /* Απαλό Slate Gray για δευτερεύοντα κείμενα */
+    --border-color: rgba(210, 176, 116, 0.25); /* Χρυσαφί διακριτικό περίγραμμα */
+    --whatsapp-green: #25D366;
+}
+
+/* --- Γενικές Ρυθμίσεις --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, .hero-text h1, .about-section h2, .menu-overview h2, .gallery-section h2, .reviews-section h2, .booking-container h2, .footer-info h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Σκοτεινό φόντο με απαλή μπλε/vintage λάμψη στο κέντρο */
+    background: radial-gradient(circle at 50% 20%, #1e272e 0%, #121619 70%, #0a0d0f 100%);
+    background-attachment: fixed;
+    color: var(--text-light);
+    line-height: 1.6;
+    padding-top: 85px;
+}
+
+/* --- Header --- */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-header);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 10000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-header .logo {
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--brand-gold);
+    display: block;
+    box-shadow: 0 0 10px rgba(210, 176, 116, 0.3);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--brand-gold);
+}
+
+/* Κουμπί Γλώσσας */
+.lang-btn {
+    background-color: transparent;
+    color: var(--brand-gold);
+    border: 1px solid var(--brand-gold);
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: var(--brand-gold);
+    color: var(--bg-main);
+}
+
+/* --- Hero Banner --- */
+.hero-banner {
+    background: linear-gradient(rgba(18, 22, 25, 0.5), rgba(18, 22, 25, 0.7)), url('hero-bg.jpg');
+    background-position: center 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: var(--brand-gold);
+    margin-bottom: 15px;
+    text-shadow: 2px 4px 15px rgba(0,0,0,0.9);
+}
+
+.hero-text p {
+    color: var(--text-light);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* --- Sections --- */
+.about-section, .menu-overview, .gallery-section, .reviews-section {
+    padding: 70px 20px;
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-section h2, .menu-overview h2, .gallery-section h2, .reviews-section h2 {
+    color: var(--brand-gold);
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+/* --- Cards Grid --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    position: relative;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.6);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--brand-gold-bright);
+    box-shadow: 0px 12px 30px rgba(74, 123, 150, 0.3);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(18,22,25,0.25), rgba(18,22,25,0.85));
+    z-index: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+}
+
+.card h3 { color: var(--brand-gold); font-size: 1.8rem; margin-bottom: 10px; }
+.card p { color: var(--text-muted); font-size: 0.95rem; }
+
+.card-breakfast { background-image: url('breakfast.jpg'); }
+.card-fingerfood { background-image: url('fingerfood.jpg'); }
+.card-buffet { background-image: url('buffet.jpg'); }
+.card-desserts { background-image: url('desserts.jpg'); }
+.card-coffee { background-image: url('coffee.jpg'); }
+.card-bar { background-image: url('bar.jpg'); }
+
+/* --- Highlights & Reviews --- */
+.highlights-grid, .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.highlight-box, .review-card {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.highlight-box:hover, .review-card:hover { transform: translateY(-5px); border-color: var(--brand-blue); }
+.highlight-box h3, .review-card h4 { color: var(--brand-gold); }
+.highlight-box p, .review-card p { color: var(--text-muted); }
+
+/* --- Gallery Grid --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(18, 22, 25, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-overlay span {
+    color: var(--brand-gold);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--brand-gold);
+    padding-bottom: 5px;
+}
+
+.gallery-item:hover img { transform: scale(1.08); }
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+
+/* --- Booking Section --- */
+.booking-section {
+    padding: 80px 20px;
+    background-color: #0e1114;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.booking-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    padding: 45px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+}
+
+.booking-container h2 { color: var(--brand-gold); margin-bottom: 10px; font-size: 2.2rem; }
+.booking-container p { color: var(--text-muted); margin-bottom: 30px; }
+
+.booking-form { display: flex; flex-direction: column; gap: 20px; }
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 15px;
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-color); border-radius: 8px;
+    color: var(--text-light); font-size: 1rem; outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--brand-blue); }
+
+.form-group input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color-scheme: dark;
+    cursor: pointer;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: var(--brand-gold);
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    filter: invert(1);
+}
+
+.whatsapp-btn {
+    background-color: var(--whatsapp-green); color: #ffffff;
+    border: none; padding: 16px;
+    font-size: 1.1rem; font-weight: 600;
+    border-radius: 8px; cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.whatsapp-btn:hover { background-color: #20ba5a; transform: translateY(-2px); }
+
+/* --- Footer --- */
+.footer {
+    background-color: #080a0c;
+    padding: 60px 20px 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-info h3 { color: var(--brand-gold); font-size: 2rem; margin-bottom: 15px; }
+.footer-info p { color: var(--text-muted); margin-bottom: 10px; }
+.footer-info a { color: var(--brand-gold); text-decoration: none; }
+.social-links a { color: var(--text-light); margin: 0 8px; font-weight: 500; text-decoration: none; }
+.social-links a:hover { color: var(--brand-gold); }
+
+.footer-bottom {
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* --- Floating Action Buttons --- */
+.floating-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+}
+
+.floating-call, .back-to-top {
+    background-color: var(--brand-gold);
+    color: var(--bg-main);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top.show { opacity: 1; visibility: visible; }
+.floating-call:hover, .back-to-top:hover { background-color: var(--brand-gold-bright); transform: scale(1.1); }

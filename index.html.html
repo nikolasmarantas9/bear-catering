@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Catering - Premium Catering στην Παλαιά Πόλη Ξάνθης</title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Bear Catering στην Παλαιά Πόλη της Ξάνθης. Πάνω από 30 χρόνια εμπειρίας σε γάμους, βαπτίσεις, εταιρικά events, μπουφέ, finger food & cocktail bars.">
+    <meta name="keywords" content="Catering Ξάνθη, Bear Catering, Παλαιά Πόλη Ξάνθης, Μπουφές, Γάμος Catering, Finger Food, Event Catering">
+    <meta property="og:title" content="Bear Catering - Premium Catering Services Xanthi">
+    <meta property="og:description" content="30+ χρόνια παράδοσης & γαστρονομικής αριστείας στην Παλαιά Πόλη της Ξάνθης.">
+    <meta property="og:image" content="hero-bg.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css?v=5.0">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Bear Catering Logo" class="logo">
+        </div>
+        <nav class="main-nav">
+            <a href="#about" data-translate="nav_about">ΠΟΙΟΙ ΕΙΜΑΣΤΕ</a>
+            <a href="#menu" data-translate="nav_menu">ΚΑΤΑΛΟΓΟΣ</a>
+            <a href="#gallery" data-translate="nav_gallery">GALLERY</a>
+            <a href="#reviews" data-translate="nav_reviews">ΚΡΙΤΙΚΕΣ</a>
+            <a href="#contact" data-translate="nav_contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            <button id="langToggleBtn" onclick="toggleLanguage()" class="lang-btn">EN</button>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-text">
+            <h1 data-translate="hero_title">Premium Catering Services</h1>
+            <p data-translate="hero_subtitle">Γεύσεις που ξεχωρίζουν για κάθε σας εκδήλωση</p>
+        </div>
+    </section>
+
+    <!-- Η Ιστορία Μας / Highlights -->
+    <section class="about-section" id="about">
+        <h2 data-translate="about_title">Η ΙΣΤΟΡΙΑ ΜΑΣ & ΓΙΑΤΙ ΝΑ ΜΑΣ ΕΠΙΛΕΞΕΤΕ</h2>
+        <p class="about-desc" data-translate="about_text">
+            Ένα φανταστικό μαγαζί στην Παλαιά Πόλη της Ξάνθης με πάνω από 30 χρόνια ιστορίας! Προσφέρουμε μοναδικές γαστρονομικές εμπειρίες με φρέσκα υλικά και μεράκι.
+        </p>
+        <div class="highlights-grid">
+            <div class="highlight-box">
+                <h3 data-translate="high_1_title">30+ Χρόνια</h3>
+                <p data-translate="high_1_desc">Παράδοση και εμπειρία στη γαστρονομία από το 1994 στην Παλαιά Πόλη της Ξάνθης.</p>
+            </div>
+            <div class="highlight-box">
+                <h3 data-translate="high_2_title">Φρέσκα Υλικά</h3>
+                <p data-translate="high_2_desc">Επιλεγμένες πρώτες ύλες υψηλής ποιότητας για μοναδική γεύση σε κάθε εκδήλωση.</p>
+            </div>
+            <div class="highlight-box">
+                <h3 data-translate="high_3_title">Custom Menus</h3>
+                <p data-translate="high_3_desc">Προσαρμοσμένες λύσεις και μενού που ταιριάζουν ακριβώς στις ανάγκες του event σας.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories Overview (6 Κάρτες: 3x2) -->
+    <section id="menu" class="menu-overview">
+        <h2 data-translate="menu_title">ΟΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ</h2>
+        <div class="cards-grid">
+            <div class="card card-breakfast">
+                <div class="card-content">
+                    <h3 data-translate="card_1_title">Breakfast & Brunch</h3>
+                    <p data-translate="card_1_desc">Πρωινές γεύσεις & φρέσκοι χυμοί.</p>
+                </div>
+            </div>
+            
+            <div class="card card-fingerfood">
+                <div class="card-content">
+                    <h3 data-translate="card_2_title">Finger Food</h3>
+                    <p data-translate="card_2_desc">Μικρές, λαχταριστές μπουκιές για κάθε event.</p>
+                </div>
+            </div>
+            
+            <div class="card card-buffet">
+                <div class="card-content">
+                    <h3 data-translate="card_3_title">Buffet</h3>
+                    <p data-translate="card_3_desc">Πλήρη γεύματα για μεγάλες εκδηλώσεις.</p>
+                </div>
+            </div>
+            
+            <div class="card card-desserts">
+                <div class="card-content">
+                    <h3 data-translate="card_4_title">Desserts</h3>
+                    <p data-translate="card_4_desc">Γλυκές δημιουργίες για το κλείσιμο.</p>
+                </div>
+            </div>
+
+            <div class="card card-coffee">
+                <div class="card-content">
+                    <h3 data-translate="card_5_title">Καφές & Ροφήματα</h3>
+                    <p data-translate="card_5_desc">Αρωματικοί καφέδες & επιλεγμένα ροφήματα.</p>
+                </div>
+            </div>
+
+            <div class="card card-bar">
+                <div class="card-content">
+                    <h3 data-translate="card_6_title">Cocktails & Bar</h3>
+                    <p data-translate="card_6_desc">Δροσιστικά ποτά & signature cocktails για πάρτι.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Real Events Section -->
+    <section id="gallery" class="gallery-section">
+        <h2 data-translate="gallery_title">ΣΤΙΓΜΙΟΤΥΠΑ ΑΠΟ EVENTS</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="wedding.jpg" alt="Γάμος Catering">
+                <div class="gallery-overlay">
+                    <span data-translate="opt_wedding">Γάμος</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="christening.jpg" alt="Βάπτιση Catering">
+                <div class="gallery-overlay">
+                    <span data-translate="opt_christening">Βάπτιση</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="party.jpg" alt="Πάρτι / Γιορτή Catering">
+                <div class="gallery-overlay">
+                    <span data-translate="opt_party">Πάρτι / Γιορτή</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="corporate.jpg" alt="Εταιρικό Event Catering">
+                <div class="gallery-overlay">
+                    <span data-translate="opt_corporate">Εταιρικό Event</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="reviews-section">
+        <h2 data-translate="reviews_title">ΤΙ ΛΕΝΕ ΟΙ ΠΕΛΑΤΕΣ ΜΑΣ</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p data-translate="rev_1_text">«Το Bear Catering ανέλαβε τη δεξίωση του γάμου μας στην Ξάνθη. Το φαγητό ήταν εξαιρετικό και η εξυπηρέτηση υποδειγματική!»</p>
+                <h4>— Γιώργος & Μαρία</h4>
+            </div>
+            <div class="review-card">
+                <p data-translate="rev_2_text">«Επαγγελματισμός 100%! Το finger food στο εταιρικό μας event έκλεψε την παράσταση. Σας ευχαριστούμε πολύ!»</p>
+                <h4>— Κωνσταντίνος Π.</h4>
+            </div>
+            <div class="review-card">
+                <p data-translate="rev_3_text">«Η καλύτερη επιλογή για catering στην Ξάνθη. Ποιότητα, φρεσκάδα και 30 χρόνια εμπειρίας που φαίνονται σε κάθε πιάτο.»</p>
+                <h4>— Ελένη Κ.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Booking / WhatsApp Inquiry Form -->
+    <section id="contact" class="booking-section">
+        <div class="booking-container">
+            <h2 data-translate="form_title">ΚΛΕΙΣΤΕ ΤΗΝ ΕΚΔΗΛΩΣΗ ΣΑΣ</h2>
+            <p data-translate="form_subtitle">Συμπληρώστε τα στοιχεία σας και στείλτε μας άμεσα αίτημα κράτησης μέσω WhatsApp!</p>
+            
+            <form id="whatsappForm" class="booking-form">
+                <div class="form-group">
+                    <input type="text" id="clientName" data-translate-placeholder="form_name" placeholder="Το ονοματεπώνυμό σας" required>
+                </div>
+                
+                <div class="form-group">
+                    <select id="eventType" required>
+                        <option value="" disabled selected data-translate="form_select_event">Επιλέξτε Τύπο Εκδήλωσης</option>
+                        <option value="Γάμος" data-translate="opt_wedding">Γάμος</option>
+                        <option value="Βάπτιση" data-translate="opt_christening">Βάπτιση</option>
+                        <option value="Πάρτι / Γιορτή" data-translate="opt_party">Πάρτι / Γιορτή</option>
+                        <option value="Εταιρικό Event" data-translate="opt_corporate">Εταιρικό Event</option>
+                        <option value="Άλλο" data-translate="opt_other">Άλλο</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="date" id="eventDate" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="guestCount" data-translate-placeholder="form_guests" placeholder="Εκτιμώμενος αριθμός ατόμων" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="eventNotes" data-translate-placeholder="form_notes" placeholder="Επιπλέον πληροφορίες ή προτιμήσεις μενού..." rows="4"></textarea>
+                </div>
+
+                <button type="button" onclick="sendToWhatsApp()" class="whatsapp-btn" data-translate="form_btn">
+                    💬 Αποστολή Κράτησης μέσω WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer & Google Maps Location -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Bear Catering</h3>
+                <p>📍 Παλαιά Πόλη, Ξάνθη, Ελλάδα</p>
+                <p>📞 <a href="tel:2541096158">25410 96158</a></p>
+                <p>✉️ info@bearcatering.gr</p>
+                <p data-translate="footer_hours">🕒 Δευτέρα - Κυριακή: 08:00 - 23:00</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a> | 
+                    <a href="#" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.562323018231!2d24.88722!3d41.13944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ad5f403c6218e7%3A0x8bc0d980a3733efd!2sXanthi%20Old%20Town!5e0!3m2!1sen!2sgr!4v1700000000000!5m2!1sen!2sgr" width="100%" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bear Catering Xanthi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:2541096158" class="floating-call" title="Καλέστε μας άμεσα">📞</a>
+        <a href="#" id="backToTopBtn" class="back-to-top" title="Επιστροφή στην κορυφή">▲</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // 1. Αυτόματος περιορισμός ημερομηνίας (Μόνο σημερινές ή μελλοντικές)
+        document.addEventListener('DOMContentLoaded', () => {
+            const eventDateInput = document.getElementById('eventDate');
+            if (eventDateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                eventDateInput.setAttribute('min', today);
+            }
+        });
+
+        // 2. Λεξικό Μεταφράσεων
+        const translations = {
+            el: {
+                nav_about: "ΠΟΙΟΙ ΕΙΜΑΣΤΕ",
+                nav_menu: "ΚΑΤΑΛΟΓΟΣ",
+                nav_gallery: "GALLERY",
+                nav_reviews: "ΚΡΙΤΙΚΕΣ",
+                nav_contact: "ΕΠΙΚΟΙΝΩΝΙΑ",
+                hero_title: "Premium Catering Services",
+                hero_subtitle: "Γεύσεις που ξεχωρίζουν για κάθε σας εκδήλωση",
+                about_title: "Η ΙΣΤΟΡΙΑ ΜΑΣ & ΓΙΑΤΙ ΝΑ ΜΑΣ ΕΠΙΛΕΞΕΤΕ",
+                about_text: "Ένα φανταστικό μαγαζί στην Παλαιά Πόλη της Ξάνθης με πάνω από 30 χρόνια ιστορίας! Προσφέρουμε μοναδικές γαστρονομικές εμπειρίες με φρέσκα υλικά και μεράκι.",
+                high_1_title: "30+ Χρόνια",
+                high_1_desc: "Παράδοση και εμπειρία στη γαστρονομία από το 1994 στην Παλαιά Πόλη της Ξάνθης.",
+                high_2_title: "Φρέσκα Υλικά",
+                high_2_desc: "Επιλεγμένες πρώτες ύλες υψηλής ποιότητας για μοναδική γεύση σε κάθε εκδήλωση.",
+                high_3_title: "Custom Menus",
+                high_3_desc: "Προσαρμοσμένες λύσεις και μενού που ταιριάζουν ακριβώς στις ανάγκες του event σας.",
+                menu_title: "ΟΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ",
+                card_1_title: "Breakfast & Brunch",
+                card_1_desc: "Πρωινές γεύσεις & φρέσκοι χυμοί.",
+                card_2_title: "Finger Food",
+                card_2_desc: "Μικρές, λαχταριστές μπουκιές για κάθε event.",
+                card_3_title: "Buffet",
+                card_3_desc: "Πλήρη γεύματα για μεγάλες εκδηλώσεις.",
+                card_4_title: "Desserts",
+                card_4_desc: "Γλυκές δημιουργίες για το κλείσιμο.",
+                card_5_title: "Καφές & Ροφήματα",
+                card_5_desc: "Αρωματικοί καφέδες & επιλεγμένα ροφήματα.",
+                card_6_title: "Cocktails & Bar",
+                card_6_desc: "Δροσιστικά ποτά & signature cocktails για πάρτι.",
+                gallery_title: "ΣΤΙΓΜΙΟΤΥΠΑ ΑΠΟ EVENTS",
+                reviews_title: "ΤΙ ΛΕΝΕ ΟΙ ΠΕΛΑΤΕΣ ΜΑΣ",
+                rev_1_text: "«Το Bear Catering ανέλαβε τη δεξίωση του γάμου μας στην Ξάνθη. Το φαγητό ήταν εξαιρετικό και η εξυπηρέτηση υποδειγματική!»",
+                rev_2_text: "«Επαγγελματισμός 100%! Το finger food στο εταιρικό μας event έκλεψε την παράσταση. Σας ευχαριστούμε πολύ!»",
+                rev_3_text: "«Η καλύτερη επιλογή για catering στην Ξάνθη. Ποιότητα, φρεσκάδα και 30 χρόνια εμπειρίας που φαίνονται σε κάθε πιάτο.»",
+                form_title: "ΚΛΕΙΣΤΕ ΤΗΝ ΕΚΔΗΛΩΣΗ ΣΑΣ",
+                form_subtitle: "Συμπληρώστε τα στοιχεία σας και στείλτε μας άμεσα αίτημα κράτησης μέσω WhatsApp!",
+                form_name: "Το ονοματεπώνυμό σας",
+                form_select_event: "Επιλέξτε Τύπο Εκδήλωσης",
+                opt_wedding: "Γάμος",
+                opt_christening: "Βάπτιση",
+                opt_party: "Πάρτι / Γιορτή",
+                opt_corporate: "Εταιρικό Event",
+                opt_other: "Άλλο",
+                form_guests: "Εκτιμώμενος αριθμός ατόμων",
+                form_notes: "Επιπλέον πληροφορίες ή προτιμήσεις μενού...",
+                form_btn: "💬 Αποστολή Κράτησης μέσω WhatsApp",
+                footer_hours: "🕒 Δευτέρα - Κυριακή: 08:00 - 23:00"
+            },
+            en: {
+                nav_about: "ABOUT US",
+                nav_menu: "SERVICES",
+                nav_gallery: "GALLERY",
+                nav_reviews: "REVIEWS",
+                nav_contact: "CONTACT",
+                hero_title: "Premium Catering Services",
+                hero_subtitle: "Exceptional flavors tailored for your special events",
+                about_title: "OUR HISTORY & WHY CHOOSE US",
+                about_text: "A fantastic establishment in the Old Town of Xanthi with over 30 years of history! We offer unique culinary experiences crafted with fresh ingredients and passion.",
+                high_1_title: "30+ Years",
+                high_1_desc: "Tradition and culinary excellence since 1994 in the Old Town of Xanthi.",
+                high_2_title: "Fresh Ingredients",
+                high_2_desc: "Selected high-quality raw materials for unforgettable flavor in every event.",
+                high_3_title: "Custom Menus",
+                high_3_desc: "Tailored solutions and menus designed precisely to fit your event's needs.",
+                menu_title: "OUR SERVICES",
+                card_1_title: "Breakfast & Brunch",
+                card_1_desc: "Morning flavors & fresh juices.",
+                card_2_title: "Finger Food",
+                card_2_desc: "Small, delicious bites for every event.",
+                card_3_title: "Buffet",
+                card_3_desc: "Full course meals for large gatherings.",
+                card_4_title: "Desserts",
+                card_4_desc: "Sweet creations for a perfect ending.",
+                card_5_title: "Coffee & Beverages",
+                card_5_desc: "Aromatic coffees & selected drinks.",
+                card_6_title: "Cocktails & Bar",
+                card_6_desc: "Refreshing drinks & signature cocktails for parties.",
+                gallery_title: "EVENT HIGHLIGHTS",
+                reviews_title: "WHAT OUR CLIENTS SAY",
+                rev_1_text: "“Bear Catering hosted our wedding reception in Xanthi. The food was exceptional and the service impeccable!”",
+                rev_2_text: "“100% Professionalism! The finger food at our corporate event stole the show. Thank you so much!”",
+                rev_3_text: "“The best choice for catering in Xanthi. Quality, freshness, and 30 years of experience evident in every dish.”",
+                form_title: "BOOK YOUR EVENT",
+                form_subtitle: "Fill in your details and send us an instant booking inquiry via WhatsApp!",
+                form_name: "Your Full Name",
+                form_select_event: "Select Event Type",
+                opt_wedding: "Wedding",
+                opt_christening: "Christening",
+                opt_party: "Party / Celebration",
+                opt_corporate: "Corporate Event",
+                opt_other: "Other",
+                form_guests: "Estimated number of guests",
+                form_notes: "Additional information or menu preferences...",
+                form_btn: "💬 Send Booking via WhatsApp",
+                footer_hours: "🕒 Monday - Sunday: 08:00 - 23:00"
+            }
+        };
+
+        let currentLang = 'el';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'el' ? 'en' : 'el';
+            document.getElementById('langToggleBtn').innerText = currentLang === 'el' ? 'EN' : 'GR';
+            
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[currentLang][key]) {
+                    element.innerText = translations[currentLang][key];
+                }
+            });
+
+            document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-translate-placeholder');
+                if (translations[currentLang][key]) {
+                    element.setAttribute('placeholder', translations[currentLang][key]);
+                }
+            });
+        }
+
+        // 3. Λειτουργία Αποστολής στο WhatsApp
+        function sendToWhatsApp() {
+            const name = document.getElementById('clientName').value;
+            const eventType = document.getElementById('eventType').value;
+            const date = document.getElementById('eventDate').value;
+            const guests = document.getElementById('guestCount').value;
+            const notes = document.getElementById('eventNotes').value;
+
+            if (!name || !eventType || !date || !guests) {
+                alert(currentLang === 'el' ? 'Παρακαλώ συμπληρώστε όλα τα υποχρεωτικά πεδία.' : 'Please fill in all required fields.');
+                return;
+            }
+
+            const phoneNumber = "302541096158"; 
+            const msgTitle = currentLang === 'el' ? 'Γεια σας, ενδιαφέρομαι για catering:' : 'Hello, I am interested in catering:';
+            
+            const message = `${msgTitle}%0A` +
+                            `- Name: ${name}%0A` +
+                            `- Event: ${eventType}%0A` +
+                            `- Date: ${date}%0A` +
+                            `- Guests: ${guests}%0A` +
+                            `- Notes: ${notes}`;
+
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+
+        // 4. Back to Top Button Listener
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
+            if (scrolled >= maxHeight - 150) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
