@@ -393,3 +393,79 @@ body {
 
 .back-to-top.show { opacity: 1; visibility: visible; }
 .floating-call:hover, .back-to-top:hover { background-color: var(--brand-gold-bright); transform: scale(1.1); }
+/* ==========================================
+   RESPONSIVE DESIGN (ΓΙΑ ΚΙΝΗΤΑ & TABLETS)
+   ========================================== */
+
+/* Κινητά τηλέφωνα (Οθόνες έως 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Βελτίωση Header */
+    .site-header {
+        padding: 10px 15px; /* Μείωση εσωτερικών περιθωρίων */
+        flex-direction: column; /* Στοίχιση των στοιχείων σε στήλη */
+        gap: 10px;
+    }
+
+    .site-header .logo {
+        height: 50px; /* Ελαφρώς μικρότερο λογότυπο για εξοικονόμηση χώρου */
+        width: 50px;
+    }
+
+    .main-nav {
+        gap: 12px; /* Μικρότερο κενό ανάμεσα στα links */
+        flex-wrap: wrap; /* Επιτρέπει στα links να αλλάζουν γραμμή αν δεν χωράνε */
+        justify-content: center;
+    }
+
+    .main-nav a {
+        font-size: 0.8rem; /* Ελαφρώς μικρότερη γραμματοσειρά */
+        letter-spacing: 0.5px;
+    }
+
+    .lang-btn {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+
+    /* 2. Προσαρμογή του Body λόγω μεγαλύτερου ύψους Header στο κινητό */
+    body {
+        padding-top: 110px; /* Αυξάνουμε το top padding για να μην κρύβεται το περιεχόμενο πίσω από το header */
+    }
+
+    /* 3. Hero Banner σε κινητά */
+    .hero-banner {
+        height: 50vh;
+        padding: 0 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    /* 4. Κάρτες & Φόρμα Κράτησης */
+    .booking-container {
+        padding: 25px 15px;
+    }
+
+    .cards-grid, .highlights-grid, .gallery-grid, .reviews-grid {
+        grid-template-columns: 1fr; /* 1 κάρτα ανά σειρά στα κινητά */
+        gap: 20px;
+    }
+
+    /* 5. Floating Action Buttons */
+    .floating-buttons {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .floating-call, .back-to-top {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+}
